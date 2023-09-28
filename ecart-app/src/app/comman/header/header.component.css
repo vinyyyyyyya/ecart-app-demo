@@ -1,0 +1,50 @@
+/* Styles for Jira header */
+.jira-header {
+    background-color: #0072b4;
+    color: rgb(190, 39, 39);
+    padding: 3px;
+    width: 100%;
+  
+}
+
+/* Styles for the menu items */
+.menu-items {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 50px;
+    margin-left: 20px;
+}
+
+.menu-item {
+    position: relative;
+    margin-right: 20px;
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: white;
+    zoom: 1.5;
+}
+
+/* Styles for the dropdown */
+.dropdown {
+    display: none;
+    list-style: none;
+    padding: 0;
+    position: absolute;
+    background-color: #576d79;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    left: 0;
+    width:300%
+}
+
+.menu-item:hover .dropdown {
+    display: block;
+}
+
+.dropdown li {
+    padding: 5px;
+    text-align: center;
+    display: flex;
+}
