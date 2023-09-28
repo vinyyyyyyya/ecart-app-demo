@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sign-in.component.css']
 })
 export class SignInComponent implements OnInit {
+  enableHeader: boolean=false;
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  login(){
+    this.enableHeader=true;
   }
 
 }
