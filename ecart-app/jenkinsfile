@@ -14,7 +14,11 @@ pipeline {
         docker { image 'node:18-alpine' }
       }
       steps {
-        sh 'node --version'
+       dir(ecart-app){
+          sh 'node --version'
+          sh 'npm install'
+       }
+      
       }
     }
   }
