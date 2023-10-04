@@ -10,14 +10,11 @@ pipeline {
       }
     }
     stage('Front-end') {
-     agent {
-        docker { image 'node:18-alpine' }
+      agent {
+        docker { image 'node:16-alpine' }
       }
       steps {
-        dir(ecart-app){
-         sh 'npm install'
-         }
-
+        sh 'node --version'
       }
     }
   }
