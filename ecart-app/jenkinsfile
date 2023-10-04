@@ -14,7 +14,7 @@ pipeline {
         docker { image 'node:18-alpine' }
       }
       steps {
-       dir('ecart-app/package.json') {
+       dir('ecart-app') {
             sh 'npm install'
             sh 'npm run build'
         }
