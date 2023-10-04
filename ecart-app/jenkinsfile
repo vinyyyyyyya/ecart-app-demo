@@ -14,8 +14,10 @@ pipeline {
         docker { image 'node:18-alpine' }
       }
       steps {
-        sh 'node --version'
-        sh 'npm install'
+       dir('path/to/angular-app') {
+            sh 'npm install'
+            sh 'npm run build'
+        }
       }
     }
   }
