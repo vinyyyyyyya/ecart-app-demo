@@ -14,7 +14,7 @@ pipeline {
         docker { image 'node:18-alpine' }
       }
       steps {
-       dir('path/to/angular-app') {
+       dir('ecart-app/package.json') {
             sh 'npm install'
             sh 'npm run build'
         }
