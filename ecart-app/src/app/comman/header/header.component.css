@@ -4,7 +4,13 @@
     color: rgb(190, 39, 39);
     padding: 3px;
     width: 100%;
-  
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* Header background color */
+    color: #fff; /* Header text color */
+    padding: 10px 0; /* Adjust padding as needed */
+    z-index: 100; /* Ensure header appears above other content */
 }
 
 /* Styles for the menu items */
@@ -24,7 +30,7 @@
 .menu-item a {
     text-decoration: none;
     color: white;
-    zoom: 1.5;
+    zoom: 1;
 }
 
 /* Styles for the dropdown */

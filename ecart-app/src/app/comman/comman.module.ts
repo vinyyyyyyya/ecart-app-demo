@@ -3,13 +3,15 @@ import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './header/header.component';
 import { DemoComponent } from './demo/demo.component';
 import { CommanRoutingModule } from './comman-routing.module';
+import { MainHeaderComponent } from './main-header/main-header.component';
 
 
 
 @NgModule({
   declarations: [
     HeaderComponent,
-    DemoComponent
+    DemoComponent,
+    MainHeaderComponent
   ],
   imports: [
     CommonModule,
@@ -17,7 +19,8 @@ import { CommanRoutingModule } from './comman-routing.module';
   ],
 
   exports: [
-    HeaderComponent
+    HeaderComponent,
+    MainHeaderComponent
   ]
 })
 export class CommanModule { }
